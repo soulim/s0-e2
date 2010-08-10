@@ -1,0 +1,1 @@
+require 'digg_bot'
