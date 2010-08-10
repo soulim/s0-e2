@@ -1,3 +1,20 @@
+== DiggBot
+
+This bot has been created specially for #rmu-session-0 channel. 
+
+How to run:
+	ruby lib/digg_bot.rb
+or verbose version
+	ruby lib/digg_bot.rb -v 
+
+Bot understands these commands:
+	!digg top stories														#=> get top stories
+	!digg containers														#=> list of all containers
+	!digg hot stories in [container_short_name]	#=> list of hot stories from given container
+	!digg help																	#=> list of available commands
+	
+	
+	
 -- RMU ZERO SESSION | PROBLEM 12
 -- Submissions due 12:00 UTC 8/10
 
