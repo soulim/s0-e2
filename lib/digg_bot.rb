@@ -38,7 +38,7 @@ class DiggBot
   end
   
   def top_stories(container = nil)
-    @digger.story.getTop.options(:count => 3, :container => container).fetch.collect { |story| "'#{story.title}' (#{story.href})" }.join(', ')
+    @digger.story.getTop.options(:count => 3, :container => container).fetch.collect { |story| "'#{story.title}' ( #{story.href} )" }.join(', ')
   end
   
   def containers
@@ -46,6 +46,6 @@ class DiggBot
   end
   
   def hot_stories_from(container = nil)
-    @digger.story.getHot.options(:count => 3, :container => container).fetch.collect { |story| "'#{story.title}' (#{story.href})" }.join(', ')
+    @digger.story.getHot.options(:count => 3, :container => container).fetch.collect { |story| "'#{story.title}' ( #{story.href} )" }.join(', ')
   end
 end
